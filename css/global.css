@@ -12,6 +12,11 @@
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: #f5f5f5;
 }
@@ -45,8 +50,32 @@ header nav a:hover {
   transition: color 0.5s;
 }
 
-hr{
+hr {
   margin: 15px 0;
+}
+
+#topo {
+  background-color: #202024;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+  margin-right: 25px;
+  border-radius: 8px;
+  display: none;
+}
+#topo a {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topo:hover {
+  opacity: 0.7;
+  transition: 500ms;
 }
 
 main section#contato {
@@ -70,17 +99,15 @@ main section .contato h4 {
   text-transform: uppercase;
   color: #3e5f8a;
   margin: 20px 0 10px 0;
-  
 }
 
-main section .contato tr{
+main section .contato tr {
   text-align: left;
 }
 
-main section .contato td{
+main section .contato td {
   text-align: left;
   width: 150px;
-  
 }
 
 main section .contato a {
@@ -92,7 +119,7 @@ main section .contato a {
   font-weight: 300;
   color: #3e5f8a;
   align-items: center;
-  margin-block:20px ;
+  margin-block: 20px;
   transition: 1s;
   justify-content: center;
 }
@@ -109,23 +136,22 @@ main section .contato .wpp {
 }
 
 main section .contato a:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 main section .contato address {
   display: flex;
   margin-top: 20px;
- 
 }
 main section .contato address img {
   width: 24px;
   height: 24px;
 }
 
-main section .contato h2 { 
+main section .contato h2 {
   border-bottom: 2px solid #3e5f8a;
   padding-bottom: 20px;
-  color:#3e5f8a;
+  color: #3e5f8a;
 }
 
 footer {
@@ -142,7 +168,6 @@ footer nav ul {
 
 footer nav hr {
   background-color: #fff;
-
 }
 
 footer nav a {
