@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,300&display=swap');
+
+:root {
+  font-family: 'Poppins', Sans-serif;
+  /*font-size: clamp(14px, 1.6rem, 2vw);*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  border-bottom: 3px solid #3e5f8a;
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+header nav a {
+  color: #000;
+  text-transform: uppercase;
+  padding-inline: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+header nav a:hover {
+  border-bottom: 3px solid #3e5f8a;
+  padding-bottom: 5px;
+  color: #3e5f8a;
+  transition: 0.5s;
+}
+
+/* Main - Slider*/
+
+main .slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+main .slider .slides {
+  width: 400%;
+  height: 550px;
+  display: flex;
+}
+
+main .slider input {
+  display: none;
+}
+
+main .slider .slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+main .slide img {
+  width: 100%;
+}
+
+main .manual-navigation {
+  width: 100%;
+  position: absolute;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+main .manual-btn {
+  border: 2px solid #3e5f8a;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+main .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+main .manual-btn:hover {
+  background-color: #3e5f8a;
+}
+
+main #radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+main #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+main #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+.navigation-auto div {
+  border: 2px solid #3e5f8a;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin-top: 510px;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #3e5f8a;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #3e5f8a;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #3e5f8a;
+}
+
+#topo{
+  background-color: #202024;
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+  margin-right: 25px;
+  border-radius: 8px;
+  display: none;
+}
+#topo a {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#topo:hover {
+  opacity: 0.7;
+  transition: 500ms;
+}
+
+main section#sobre {
+  display: flex;
+  height: auto;
+  gap: 30px;
+  margin-block: 200px;
+  justify-content: center;
+}
+
+main section img {
+  width: 100%;
+  margin: 10px;
+  height: 90%;
+}
+
+main section .dentista {
+  width: 30%;
+}
+
+main section .sobre {
+  width: 40%;
+  text-align: justify;
+  /* margin-block: 100px; */
+}
+
+main section .sobre h2 {
+  color: #3e5f8a;
+}
+hr {
+  height: 3px;
+  background-color: #3e5f8a;
+  margin: 15px 0;
+}
+  
+
+main section .sobre p {
+  line-height: 30px;
+  margin: 15px 5px;
+}
+
+main section.tipo-servico {
+  text-align: center;
+  color: #3e5f8a;
+  margin-bottom: 200px;
+}
+
+main section.tipo-servico h2 {
+  border-bottom: 3px solid #3e5f8a;
+  width: 40%;
+  margin: 0 auto 50px;
+  
+}
+main section .servicos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main section .servico {
+  width: 230px;
+  height: 350px;
+  text-align: center;
+  margin: 20px;
+  transition: 1s;
+}
+
+main section .servico img {
+  border-radius: 100%;
+}
+
+main section .servico:hover {
+  background-color: #e0f2f7;
+  border-radius: 20px;
+  transform: scale(1.2) !important;
+}
+
+main section .servico h3 {
+  margin-top: 20px;
+}
+
+main section#contato {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-block: 150px;
+  font-weight: 300;
+}
+
+main section .contato {
+  width: 30%;
+}
+
+main section .contato article {
+  background-color: #fff;
+}
+
+main section .contato h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #3e5f8a;
+  margin: 20px 0 10px 0;
+  
+}
+
+main section .contato tr{
+  text-align: left;
+}
+
+main section .contato td{
+  text-align: left;
+  width: 150px;
+  
+}
+
+main section .contato a {
+  display: flex;
+  line-height: 40px;
+  border: 1px solid #3e5f8a;
+  padding: 8px;
+  border-radius: 40px;
+  font-weight: 300;
+  color: #3e5f8a;
+  align-items: center;
+  margin-block:20px ;
+  transition: 1s;
+  justify-content: center;
+}
+
+main section .contato a img {
+  width: 24px;
+  height: 24px;
+}
+
+main section .contato .wpp {
+  background-color: #3e5f8a;
+  color: #fff;
+  font-weight: 200;
+}
+
+main section .contato a:hover {
+ transform: scale(1.1);
+}
+
+main section .contato address {
+  display: flex;
+  margin-top: 20px;
+ 
+}
+main section .contato address img {
+  width: 24px;
+  height: 24px;
+}
+
+main section .contato h2 { 
+  border-bottom: 2px solid #3e5f8a;
+  padding-bottom: 20px;
+  color:#3e5f8a;
+}
+
+footer {
+  height: 350px;
+  background-color: #3e5f8a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+footer nav hr {
+  background-color: #fff;
+
+}
+
+footer nav a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-inline: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer nav .social {
+  display: flex;
+  gap: 40px;
+  justify-content: end;
+  padding: 10px;
+}
+footer nav ul a:hover {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 5px;
+  transition: color 0.5s;
+}
+footer nav .social a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+

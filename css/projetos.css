@@ -1,0 +1,14 @@
+main  {
+  margin-bottom: 150px;
+}
+
+main section:not(:last-child){
+
+  width: 80%;
+  margin-left: 200px;
+}
+main h1{
+  font-size:48px;
+  font-weight: 300;
+  margin-block: 50px  80px;
+}

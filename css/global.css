@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,300&display=swap');
+
+:root {
+  font-family: 'Poppins', Sans-serif;
+  /*font-size: clamp(14px, 1.6rem, 2vw);*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  border-bottom: 3px solid #3e5f8a;
+}
+
+header nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+header nav a {
+  color: #000;
+  text-transform: uppercase;
+  padding-inline: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+header nav a:hover {
+  border-bottom: 3px solid #3e5f8a;
+  padding-bottom: 5px;
+  color: #3e5f8a;
+  transition: color 0.5s;
+}
+
+hr{
+  margin: 15px 0;
+}
+
+main section#contato {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-block: 100px;
+  font-weight: 300;
+}
+
+main section .contato {
+  width: 30%;
+}
+
+main section .contato article {
+  background-color: #fff;
+}
+
+main section .contato h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #3e5f8a;
+  margin: 20px 0 10px 0;
+  
+}
+
+main section .contato tr{
+  text-align: left;
+}
+
+main section .contato td{
+  text-align: left;
+  width: 150px;
+  
+}
+
+main section .contato a {
+  display: flex;
+  line-height: 40px;
+  border: 1px solid #3e5f8a;
+  padding: 8px;
+  border-radius: 40px;
+  font-weight: 300;
+  color: #3e5f8a;
+  align-items: center;
+  margin-block:20px ;
+  transition: 1s;
+  justify-content: center;
+}
+
+main section .contato a img {
+  width: 24px;
+  height: 24px;
+}
+
+main section .contato .wpp {
+  background-color: #3e5f8a;
+  color: #fff;
+  font-weight: 200;
+}
+
+main section .contato a:hover {
+ transform: scale(1.1);
+}
+
+main section .contato address {
+  display: flex;
+  margin-top: 20px;
+ 
+}
+main section .contato address img {
+  width: 24px;
+  height: 24px;
+}
+
+main section .contato h2 { 
+  border-bottom: 2px solid #3e5f8a;
+  padding-bottom: 20px;
+  color:#3e5f8a;
+}
+
+footer {
+  height: 350px;
+  background-color: #3e5f8a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+footer nav hr {
+  background-color: #fff;
+
+}
+
+footer nav a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-inline: 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer nav .social {
+  display: flex;
+  gap: 40px;
+  justify-content: end;
+  padding: 10px;
+}
+footer nav ul a:hover {
+  border-bottom: 3px solid #fff;
+  padding-bottom: 5px;
+  transition: color 0.5s;
+}
+footer nav .social a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}

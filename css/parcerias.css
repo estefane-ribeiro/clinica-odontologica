@@ -1,0 +1,51 @@
+main  {
+  margin-bottom: 150px;
+}
+
+main section{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  gap: 150px;
+  justify-content: center ;
+}
+main h1{
+  font-size:48px;
+  font-weight: 300;
+  margin-block: 50px  80px;
+  margin-left: 200px;
+}
+
+main h4 {
+  margin-block: 20px;
+  
+}
+
+main h4 a {
+  color: #3e5f8a;
+}
+
+main .parceria {
+  width: 250px;
+  min-height: 405px;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+main .parceria img {
+  margin: 0 auto;
+}
+
+main .parceria p {
+  margin-block: 20px;
+}
+
+main .pm {
+  height: 168px;
+}  
+
+main .parceria:hover{
+  background-color: #e0f2f7;
+  border-radius: 20px;
+  transform: scale(1.1) !important;
+}
